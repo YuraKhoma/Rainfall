@@ -1,0 +1,84 @@
+﻿@model Rainfall.Models.Items
+
+@{
+    ViewData["Title"] = "GetDataById";
+}
+
+<h1>GetDataById</h1>
+
+<div>
+    <h4>Items</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Label)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Label)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.StationReference)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.StationReference)
+        </dd>
+
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Lat)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Lat)
+        </dd>
+
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Long)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Long)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.GridReference)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.GridReference)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.EaRegionName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.EaRegionName)
+        </dd>
+    </dl>
+    
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Measures.LatestReading)
+        </dt>
+        <dd class="col-sm-10">
+        </dd>
+       
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Measures.LatestReading.DateTime)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Measures.LatestReading.DateTime)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Measures.LatestReading.Value)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Measures.LatestReading.Value)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Measures.LatestReading.Measure)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Measures.LatestReading.Measure)
+        </dd>
+    </dl>
+</div>

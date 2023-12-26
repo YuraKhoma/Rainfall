@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Search for Data by ID</h2>
+
+<form asp-controller="Rainfall" asp-action="GetDataById" method="post">
+    <label for="id">Enter ID:</label>
+    <input type="text" id="id" name="id" />
+    <button type="submit">Search</button>
+</form>
+
